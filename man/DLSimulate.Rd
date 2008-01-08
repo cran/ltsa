@@ -43,17 +43,13 @@ code{\link{arima.sim}}
 \examples{
 #Simulate hyperbolic decay time series 
 #with Hurst coefficient, H=0.9
-#requires FGN library to compute HK
-library(FGN)
 n<-2000
 H<-0.9
 alpha<-2*(1-H)  #hyperbolic decay parameter
 r<-(1/(1:n))^alpha
 z<-DLSimulate(n, r)
 plot.ts(z)
-HK<-HurstK(z)
-HK
-
+#can use HurstK function in FGN library to estimate H
 
 }
 \keyword{ ts }
