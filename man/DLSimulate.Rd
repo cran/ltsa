@@ -31,10 +31,8 @@ Algorithms for Linear Time Series Analysis,
 Journal of Statistical Software.
 }
 \author{ A.I. McLeod }
-\note{ 
 
-}
-\seealso{ \
+\seealso{ 
 \code{\link{DHSimulate}},
 \code{\link{SimGLP}},
 \code{\link[FGN]{SimulateFGN}} 

@@ -1,0 +1,18 @@
+".onLoad" <-
+function(lib, pkg) library.dynam("ltsa", pkg, lib)
+
+export("DHSimulate",
+"DLAcfToAR",
+"DLLoglikelihood",
+"DLResiduals",
+"DLSimulate",
+"PredictionVariance",
+"SimGLP",
+"ToeplitzInverseUpdate",
+"TrenchForecast",
+"TrenchInverse",
+"TrenchLoglikelihood",
+"TrenchMean",
+"is.toeplitz",
+"tacvfARMA")
+
