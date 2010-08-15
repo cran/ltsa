@@ -45,7 +45,10 @@ for (i in 2:n)
 	z[i]<-phi*z[i-1]+a[i]*sig
 z<-z+mu
 r<-phi^(0:(n-1))
-TrenchMean(r,z)
-mean(z)
+meanMLE<-TrenchMean(r,z)
+meanBLUE<-mean(z)
+ans<-c(meanMLE, meanBLUE)
+names(ans)<-c("BLUE", "MLE")
+ans
 }
 \keyword{ ts }
