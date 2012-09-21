@@ -1,3 +1,7 @@
+CHANGES IN 'ltsa' VERSION 1.42 (2012-09-17)
+    o    minor documentation fix
+CHANGES IN 'ltsa' VERSION 1.41 (2011-05-16)
+    o    minor issue with DHSimulate fixed
 CHANGES IN 'ltsa' VERSION 1.4 (2010-11-30)
     o    fixed NAMESPACE problem
 

@@ -13,7 +13,7 @@ function(n, r, ReportTestOnly=FALSE, rand.gen=rnorm, ...){
          return(!test)
     if (test)
         stop("Davies-Harte nonnegativity condition not valid")
-    Z<-complex(real = rand.gen(N-1, ...), imag = rand.gen(N-1, ...))
+    Z<-complex(real = rand.gen(N-1, ...), imaginary = rand.gen(N-1, ...))
     Z2<-2+sqrt(2)*rand.gen(2, ...)
     Z<-c(Z2[1],Z,Z2[2],Conj(rev(Z)))
     X<-Re(fft(sqrt(g)*Z,inverse=TRUE))/sqrt(2*N)

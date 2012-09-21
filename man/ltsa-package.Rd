@@ -13,8 +13,8 @@ Methods are given for loglikelihood computation, forecasting and simulation.
 \tabular{ll}{
 Package: \tab ltsa\cr
 Type: \tab Package\cr
-Version: \tab 1.4\cr
-Date: \tab 2010-11-30\cr
+Version: \tab 1.4.2\cr
+Date: \tab 2012-09-21\cr
 License: \tab GPL (>= 2)\cr
 }
 
