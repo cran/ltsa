@@ -43,10 +43,28 @@ agree.
 }
 \author{ A.I. McLeod }
 \seealso{ 
-\code{\link[FGN]{FGNLL}} 
 \code{\link{TrenchLoglikelihood}} 
 }
 \examples{
+#Example 1
+#compute loglikelihood for white noise
+z<-rnorm(100)
+DLLoglikelihood(c(1,rep(0,length(z)-1)), z)
+
+#Example 2
+#simulate a time series and compute the concentrated loglikelihood using DLLoglikelihood and
+#compare this with the value given by TrenchLoglikelihood.
+phi<-0.8
+n<-200
+r<-phi^(0:(n-1))
+z<-arima.sim(model=list(ar=phi), n=n)
+LD<-DLLoglikelihood(r,z)
+LT<-TrenchLoglikelihood(r,z)
+ans<-c(LD,LT)
+names(ans)<-c("DLLoglikelihood","TrenchLoglikelihood")
+
+#Example 3
+\dontrun{
 #Compare direct evaluation of AR(1) loglikelihood with DL method
 #First define the exact concentrated loglikelihood function for AR(1)
 AR1Loglikelihood <-function(phi,z){
@@ -68,23 +86,10 @@ for (i in 1:length(phis)) {
 }
 ans<-matrix(c(ansDL,ansAR1),ncol=2)
 dimnames(ans)<-list(phis, c("DL-method","AR1-method"))
+}
 
-
-#compute loglikelihood for white noise
-z<-rnorm(100)
-DLLoglikelihood(c(1,rep(0,length(z)-1)), z)
-
-#simulate a time series and compute the concentrated loglikelihood using DLLoglikelihood and
-#compare this with the value given by TrenchLoglikelihood.
-phi<-0.8
-n<-200
-r<-phi^(0:(n-1))
-z<-arima.sim(model=list(ar=phi), n=n)
-LD<-DLLoglikelihood(r,z)
-LT<-TrenchLoglikelihood(r,z)
-ans<-c(LD,LT)
-names(ans)<-c("DLLoglikelihood","TrenchLoglikelihood")
-
+#Example 4
+\dontrun{
 #compare timings. See (McLeod, Yu, Krougly, Table 8).
  n<-5000
  ds<-c(-0.45, -0.25, -0.05, 0.05, 0.25, 0.45)
@@ -101,5 +106,6 @@ names(ans)<-c("DLLoglikelihood","TrenchLoglikelihood")
     }
  dimnames(tim)<-list(ds, c("DL-C","DL-R","Trench"))
  tim
+}
 }
 \keyword{ts }

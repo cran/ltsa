@@ -35,7 +35,6 @@ Journal of Statistical Software.
 \seealso{ 
 \code{\link{DHSimulate}},
 \code{\link{SimGLP}},
-\code{\link[FGN]{SimulateFGN}} 
 code{\link{arima.sim}} 
 }
 \examples{
