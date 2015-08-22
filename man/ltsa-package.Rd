@@ -3,7 +3,7 @@
 \alias{ltsa}
 \docType{package}
 \title{
-Linear time series analysis
+Linear Time Series Analysis
 }
 \description{
 Linear time series modelling.  
@@ -13,8 +13,8 @@ Methods are given for loglikelihood computation, forecasting and simulation.
 \tabular{ll}{
 Package: \tab ltsa\cr
 Type: \tab Package\cr
-Version: \tab 1.4.3\cr
-Date: \tab 2012-12-14\cr
+Version: \tab 1.4.5\cr
+Date: \tab 2015-08-22\cr
 License: \tab GPL (>= 2)\cr
 }
 
@@ -61,6 +61,7 @@ Journal of Statistical Software.
 \code{\link{DLLoglikelihood}},
 \code{\link{DLResiduals}},
 \code{\link{DLSimulate}},
+\code{\link{exactLoglikelihood}},
 \code{\link{is.toeplitz}},
 \code{\link{PredictionVariance}},
 \code{\link{tacvfARMA}},

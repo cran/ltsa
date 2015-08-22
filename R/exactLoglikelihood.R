@@ -1,8 +1,9 @@
-`TrenchLoglikelihood` <-
-function( r, z )  
+`exactLoglikelihood` <-
+function(r, z, innovationVarianceQ=TRUE)  
 {
     EPS<-.Machine$double.eps
-    r<-r/r[1]
+    r0 <- r[1] #need to input autocorrelation function to "trenchQFR"
+    r <- r/r[1]
     if (r[1] < EPS) 
         stop("error: r[1] the variance is <= 0") 
     if (length(r) != length(z)) 
@@ -14,9 +15,16 @@ function( r, z )
      fault<-out$fault
      if (fault == 1) 
         stop("error: matrix is not p.d.")
-     n<-length(z)
-     S<-(out$tr)[1]
+     n <- length(z)
+     S <-(out$tr)[1]
      lg<-(out$tr)[2]
-    -(n/2)*log(S/n)-(1/2)*lg
+     if (innovationVarianceQ) {
+       LL <- -0.5*n*(1+log(2*pi))-0.5*(n*log(S/n)+lg)
+       sigmaSq <- S/(n*r0)
+     }
+     else {
+       LL <- sigmaSq <- NA
+     }
+     list(LL=LL, sigmaSq=sigmaSq)  
 }
 

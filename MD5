@@ -1,6 +1,6 @@
-fa77af21343f243131509b3dac08fcbf *DESCRIPTION
-5d63e49f9f0bc99048c6289130abec32 *NAMESPACE
-9589d007ba0347a7b278620adbe400bd *NEWS
+83646427301250c33c48a679c9931494 *DESCRIPTION
+4b70e460aa8005c2f8110b260a1ef2ae *NAMESPACE
+124cfc2e05848b820aa1348950b101a1 *NEWS
 aae45a16fbaf077dbc7c54608d566c0b *R/DHSimulate.R
 119b6eb2a95ec55591c08a1563dda7a3 *R/DLAcfToAR.R
 a75f6fd45397f4813bb7a99e5c3ccf61 *R/DLLoglikelihood.R
@@ -13,6 +13,7 @@ ed11084a4689691a33fe912e10277802 *R/DLSimulate.R
 076e71d8ad1091c404e1394247af7de4 *R/TrenchInverse.R
 ae6d653687ac7847f8601cc313ed378c *R/TrenchLoglikelihood.R
 48a647e50fa7ef74f2a76afb9d5d3ff0 *R/TrenchMean.R
+c6dce94ef835ab0ff9dd0d09515b16fa *R/exactLoglikelihood.R
 14eb3305a71a2eec4b0cc9e8ebb52dfe *R/is.toeplitz.R
 73455dcc54b8611427094ee7b0f3af02 *R/ltsa-internal.R
 7c4e676a5f298c739671e3f8804f6e4c *R/tacvfARMA.R
@@ -39,8 +40,9 @@ ec6d42cca28e53f9334598687bb4a06a *man/PredictionVariance.Rd
 e262bc8b834177c13a65d72ede7ec6d5 *man/TrenchInverse.Rd
 bc5f01f3055334f19dc3334c6965e8d8 *man/TrenchLoglikelihood.Rd
 d47c43e8f2042b61ecf836e4c695e1f4 *man/TrenchMean.Rd
+722a67979882154c4254f4f2e4945740 *man/exactLoglikelihood.Rd
 8f891fd789db217c48424bb1857847c5 *man/is.toeplitz.Rd
-32c20b95bfb84858f22d84bb0fc60318 *man/ltsa-package.Rd
+a01cee348bcd195fe11b6fd7db199ff4 *man/ltsa-package.Rd
 c7e0325aace023c1f10e747230079548 *man/tacvfARMA.Rd
 01f01d1efe669fa1fa618bbb4f79d631 *src/DLResid.c
 468ca347c9a78633aa4807f126305313 *src/DLSim.c

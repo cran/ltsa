@@ -5,6 +5,7 @@ export("DHSimulate",
 "DLLoglikelihood",
 "DLResiduals",
 "DLSimulate",
+"exactLoglikelihood",
 "PredictionVariance",
 "SimGLP",
 "ToeplitzInverseUpdate",
@@ -14,4 +15,4 @@ export("DHSimulate",
 "TrenchMean",
 "is.toeplitz",
 "tacvfARMA")
-
+importFrom("stats", "ARMAtoMA", "convolve", "fft", "rnorm", "toeplitz")
