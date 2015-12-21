@@ -12,7 +12,7 @@ variance term is return.
 \usage{
 exactLoglikelihood(r, z, innovationVarianceQ = TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{r}{the portion of autocovariance function which when multiplied by
   the variance term equals the full autocovariance function.
@@ -21,16 +21,25 @@ exactLoglikelihood(r, z, innovationVarianceQ = TRUE)
 }
   \item{innovationVarianceQ}{
 When TRUE, the variance term is the innovation variance and when FALSE it is the
-variance of the time series.
+variance of the time series. For ARFIMA models, set to TRUE. But FGN requires
+setting innovationVarianceQ to FALSE since only the innovation variance is not
+known and so the likelihood has a slightly different form.
 }
 }
 \details{
-This function uses the trench algorithm that is implememented in C to comp
+This function uses the trench algorithm that is implememented in C.
+This function is provided to include all multiplicative constants.
+For many purposes, such as MLE, we only need to likelihood function up to
+a multiplicative constant. But for information criteria, we may need the constant
+terms so we can compare our results with other types of models or with other software
+such as arima(). The arima() function also computes the exact log-likelihood
+and uses it in the computation of the AIC and BIC.
 }
 \value{
 
 \item{LL }{exact log-likelihood}
-\item{sigmaSq }{MLE for the variance term}
+\item{sigmaSq }{MLE for the variance term. If innovationVarianceQ is TRUE, is the an
+estimate of the residual variance otherwise it is an estimate of the variance of the time series.}
 }
 
 \author{
@@ -38,7 +47,8 @@ A. I. McLeod, aimcleod@uwo.ca
 }
 
 \seealso{
-\code{\link{TrenchLoglikelihood}}
+\code{\link{TrenchLoglikelihood}},
+\code{\link{DLLoglikelihood}}
 }
 \examples{
 set.seed(7773311)

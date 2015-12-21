@@ -3,7 +3,7 @@
 \title{ Prediction variance}
 \description{
 The prediction variance of the forecast for lead times l=1,...,maxLead
-is computed.  
+is computed given theoretical autocovariances. 
 }
 \usage{
 PredictionVariance(r, maxLead = 1, DLQ = TRUE)
@@ -24,7 +24,7 @@ length(r)-1.
 The mean-square error of this predictor is the lead-one error variance.
 The moving-average expansion of this model is used to compute any
 remaining variances (McLeod, Yu and Krougly, 2007).
-With the other algorithm, when DLQ=FALSE, a direct matrix representation
+With the other Trench algorithm, when DLQ=FALSE, a direct matrix representation
 of the forecast variances is used (McLeod, Yu and Krougly, 2007).
 The Trench method is exact.  Provided the length of r is large enough,
 the two methods will agree.
@@ -44,7 +44,8 @@ Journal of Statistical Software.
 
 \seealso{ 
 \code{\link{predict.Arima}}, 
-\code{\link{TrenchForecast}}
+\code{\link{TrenchForecast}},
+\code{\link{exactLoglikelihood}}
 }
 
 \examples{

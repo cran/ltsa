@@ -1,3 +1,6 @@
+CHANGES IN 'ltsa' VERSION 1.46 (2015-08-21)
+    o    improved documentation exactLoglikelihood()
+    o    innovationVariance()
 CHANGES IN 'ltsa' VERSION 1.45 (2015-08-21)
     o    new function exactLoglikelihood()
     o    fixed warnings by adjusting namespace,
