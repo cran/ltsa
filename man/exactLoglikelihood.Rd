@@ -63,4 +63,3 @@ exactLoglikelihood(r, z, innovationVarianceQ = TRUE)
 #agrees!
 }
 \keyword{ ts }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

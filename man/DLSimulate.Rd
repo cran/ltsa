@@ -35,7 +35,7 @@ Journal of Statistical Software.
 \seealso{ 
 \code{\link{DHSimulate}},
 \code{\link{SimGLP}},
-code{\link{arima.sim}} 
+\code{\link{arima.sim}} 
 }
 \examples{
 #Simulate hyperbolic decay time series 

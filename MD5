@@ -1,4 +1,4 @@
-ca808b04219c9f755ac18655fd6c1eb8 *DESCRIPTION
+86dce02ae44ceadcca658efaa3cabd3f *DESCRIPTION
 a53cd2d8dd590979fbf49666fdf308aa *NAMESPACE
 d0372efc209118ffecf3aa19d5d1779b *NEWS
 aae45a16fbaf077dbc7c54608d566c0b *R/DHSimulate.R
@@ -18,13 +18,13 @@ b61ae7fd9565cc5882dffd3feef512cb *R/innovationVariance.R
 14eb3305a71a2eec4b0cc9e8ebb52dfe *R/is.toeplitz.R
 73455dcc54b8611427094ee7b0f3af02 *R/ltsa-internal.R
 7c4e676a5f298c739671e3f8804f6e4c *R/tacvfARMA.R
-8bf957945bf678f674242755286600a9 *inst/CITATION
-dcebfb9ee7052a237273714e1bd1d75b *inst/doc/index.html
+34633e65a93a4ea91745cf0041592979 *inst/CITATION
+d7917dcc3b9d86a152292fe71e1194f8 *inst/doc/index.html
 6b7a472a22fbdbff4b2b08ddb4f43735 *inst/doc/index_files/colorschememapping.xml
 765bd87de506b26994d04c3ba02bf3f9 *inst/doc/index_files/filelist.xml
 fdbc6052d9ca762459b72dc2da2e7a23 *inst/doc/index_files/preview.wmf
 1d712df30aaae149416bfc0da166f00a *inst/doc/index_files/themedata.thmx
-b338eae1f058d6c7c08a4814cdb6a031 *inst/doc/v23i05.pdf
+18d2bec75c60b643123e6be5fcfd4a16 *inst/doc/v23i05.pdf
 edf2ad5de4ea660c8d1b29ddecea419b *inst/doc/v23i05_table12.R
 03dfc3b96ca165312ece4f08ae9cdd9c *inst/doc/v23i05_table14.R
 71cbbbe670e61502320bbfb39092c65b *inst/doc/v23i05_table15a.R
@@ -33,7 +33,7 @@ a64014437bd362705b74103d3bb43f8a *man/DHSimulate.Rd
 19fd356f8bdd39fcb50da7e93abbc729 *man/DLAcfToAR.Rd
 a236ab4c5a5ea96f724bd8bc88c0ab4b *man/DLLoglikelihood.Rd
 2e0895ec7e1340a0279103f7c312ef36 *man/DLResiduals.Rd
-d98876664230e345a1f5b191af1caa2b *man/DLSimulate.Rd
+b604e7eeab62c7023ca28d3a83a36580 *man/DLSimulate.Rd
 285ffe13e12d5d3423459feb6b8db449 *man/PredictionVariance.Rd
 61d9840c5cdf396e00abe11863297e31 *man/SimGLP.Rd
 0c8ed0dcb98da871ebb63325b945ac7e *man/ToeplitzInverseUpdate.Rd
@@ -41,7 +41,7 @@ d98876664230e345a1f5b191af1caa2b *man/DLSimulate.Rd
 e262bc8b834177c13a65d72ede7ec6d5 *man/TrenchInverse.Rd
 bc5f01f3055334f19dc3334c6965e8d8 *man/TrenchLoglikelihood.Rd
 d47c43e8f2042b61ecf836e4c695e1f4 *man/TrenchMean.Rd
-1a3c21aff9af2093ce388e388e26ce54 *man/exactLoglikelihood.Rd
+417c05e3d090b621be6b967dcf4def6f *man/exactLoglikelihood.Rd
 181fb0f3a92add7673b8d9d5590602e2 *man/innovationVariance.Rd
 8f891fd789db217c48424bb1857847c5 *man/is.toeplitz.Rd
 a01cee348bcd195fe11b6fd7db199ff4 *man/ltsa-package.Rd
@@ -51,7 +51,7 @@ c7e0325aace023c1f10e747230079548 *man/tacvfARMA.Rd
 51d7e13801155ce985e5807c6ce8c271 *src/DLar.c
 a879d385dff84148cda9c74b331f1db6 *src/durlev.c
 7013f5d2be7e75eca29d800dfe119129 *src/fromWedgeStorage.c
-f19332812576bf02124882234506166b *src/nrutil.c
+72aa3e53aeab47e30be259dcc5338c87 *src/nrutil.c
 d8407efc9a7afc1500507396189c1e74 *src/nrutil.h
 8719a8d93878fe8de9b52019e6e5d86f *src/trenchDet.c
 278fd33993a7d88a4b655d2bb3c82878 *src/trenchInv.c

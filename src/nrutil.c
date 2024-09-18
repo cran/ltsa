@@ -7,7 +7,7 @@ VECTOR Vector( long n )
 	// allocate a double vector and set default values to 0
         
 	VECTOR vector;
-	vector=(VECTOR)Calloc(n, typeof(double));
+	vector=(VECTOR)R_Calloc(n, typeof(double));
 	memset( vector, 0, n * sizeof(double) );
 
 	return vector;
@@ -20,10 +20,10 @@ MATRIX Matrix( long n, long m )
 	MATRIX matrix;
    
 	/* allocate pointers to rows */
-	matrix = (MATRIX) Calloc( n, typeof(double*) );
+	matrix = (MATRIX) R_Calloc( n, typeof(double*) );
    
 	/* allocate rows and set pointers to them */
-	matrix[0] = (double*) Calloc( n * m, typeof(double) );
+	matrix[0] = (double*) R_Calloc( n * m, typeof(double) );
 
    	memset( matrix[0], 0, n * m * sizeof(double) );
    
@@ -35,13 +35,13 @@ MATRIX Matrix( long n, long m )
 
 void free_matrix( MATRIX matrix )
 {
-	Free( matrix[0] );
-	Free( matrix );
+	R_Free( matrix[0] );
+	R_Free( matrix );
 } 
 
 void free_vector( VECTOR vector )
 {
-	Free( vector );
+	R_Free( vector );
 }
  
 
